@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul class = "navbar-nav">
+    <li class = "nav-item">
+        <a routerLink="employees" routerLinkActive = "active" class = "nav-link" > Employee List</a>
+    </li>
+
+    <li class = "nav-item">
+      <!--<a [routerLink]="linkCreate" routerLinkActive = "active" class = "nav-link" > Add Employee</a>-->
+      <a routerLink="create-employee" routerLinkActive = "active" class = "nav-link" > Add Employee</a>
+    </li>
+
+  </ul>
+
+  <!--<button (click)="mudarLink()">mudar link</button>-->
+
+</nav>
+
+<h1 class="text-center"> {{title}} </h1>
+<div class = "container">
+  <router-outlet></router-outlet>
+</div>
+
+<footer class = "footer">
+  <div class = "container">
+    <span> All Rights Reserved 2020 @JavaGuides</span>
+  </div>
+</footer>
+
+<!-- <app-employee-list></app-employee-list> -->
+
+
